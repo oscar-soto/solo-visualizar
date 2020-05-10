@@ -1,0 +1,207 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+
+/* variables */
+:root{
+    /* colores  */
+    --green-color:#7ACC2D;
+    --white-color: #ffffff;
+    --black-color: #313337;
+    --gray-line: #EEEEEE;
+
+    /* tipografia */
+    --normal: 12px;
+
+    /* espaciado */
+    --space: 10px;
+
+    /* box shadow  */
+    --box: 0 0 2px 1px #e6e5e9;
+
+    /* box mention  */
+    --box-mention: 0 3px 6px rgba(0, 0, 0, 0.16);
+}
+
+/* layout */
+body,html{
+    padding: 0px;
+    margin: 0px;
+    font-size: var(--normal);
+    font-family: 'Open Sans', sans-serif;
+    background: var(--white-color);
+}
+
+/* navegador */
+
+.nav-container{
+    display: flex;
+    background-color: var(--green-color);
+    padding: var(--space);
+    color: white;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav-container ul{
+    display: flex;
+}
+
+.nav-container li{
+    padding-left: 20px;
+    list-style: none;
+}
+
+.nav-container li a{
+    color: var(--black-color);
+    text-decoration: none;
+}
+
+.nav-container li a:hover{
+    color: var(--white-color) ;
+}
+
+/* seccion principal */
+
+.main-section{
+    padding: 15%;
+    text-align: center;
+    color: var(--black-color);
+}
+.main-section h1{
+    font-size: 30px;
+    font-weight: bold;
+}
+.products{
+    background: url('../image/curve.png');
+    height: 95px;
+    background-size: cover;
+    background-position: center top;
+    background-repeat: no-repeat;
+    padding: 15% 20%;
+    display: flex;
+    color: var(--black-color);
+}
+.product{
+    padding: var(--space);
+    margin-top: -250px;
+}
+.content{
+    background: var(--white-color);
+    padding: var(--space);
+    box-shadow: var(--box);
+    border-radius: 3px;
+    padding: 20px;
+    /* width: 220px; */
+}
+
+.image-content{
+    text-align: center;
+}
+
+.main-button{
+    background: var(--green-color);
+    width: 100%;
+    padding: var(--space);
+    font-size: var(--normal);
+    color: var(--white-color);
+    border: none;
+    cursor: pointer;
+    border-radius: 2px;
+}
+
+.main-button:hover{
+    background: #5e9e22;
+}
+
+/* beneficios */
+.benefit{
+    display: flex;
+    justify-content: space-around;
+    padding: 100px;
+    margin-top: 30px;
+}
+.benefit-container{
+    padding: 30px;
+}
+.benefit-imgContainer{
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+.benefit-img{
+    width: 120px;
+}
+.benefit-title{
+    font-size: 17px;
+    text-align: center;
+    font-weight: bold;
+    color: var(--black-color);
+}
+
+hr{
+    border: 1px solid var(--gray-line);
+}
+
+/* menciones */
+.mentions{
+    height: 400px;
+}
+.mention-grid{
+    display: grid;
+    grid-template-columns: repeat(4, 250px);
+    column-gap: 20px;
+    justify-items: center;
+    justify-content: center;
+}
+.mention-container{
+    box-shadow: var(--box-mention);
+    border-radius: 5px;
+}
+.mention-title{
+    text-align: center;
+    color: var(--black-color);
+    font-size: 30px;
+    padding-top: 40px;
+    margin-bottom: 39px;
+}
+.metion-imgContainer{
+    margin: 0;
+    padding: 0;
+}
+.metion-img{
+    width: 100%;
+    height: 120px;
+    object-fit: cover;
+    overflow: hidden;
+    object-position: 0px -30px;
+    margin: 0;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+.mention-name{
+    font-size: 17px;
+    color: var(--black-color);
+    margin: 0;
+    padding: 0 10px;
+}
+.mention-description p{
+    font-size: 12px;
+    font-family: 'Open Sans', sans-serif;
+    margin: 0px;
+    padding: 5px 10px 10px 10px;
+}
+
+/* pie de pagina  */
+
+.footer{
+    margin: 0;
+    padding: 0;
+    height: 60px;
+    background: var(--black-color);
+    display: flex;
+    justify-content: space-between;
+    padding: 0 10px;
+    align-items: center;
+}
+.footer p{
+    margin: 0;
+    color: var(--white-color);
+}
